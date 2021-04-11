@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.app .container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #eff2f3;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title{
+  font-size: 40px;
+  margin-left: 4%;
+  margin-top: 3%;
+  color: #3b4446;
+}
+.u-palette-2-base, .u-body.u-palette-2-base,
+.u-container-style.u-palette-2-base:before,
+.u-table-alt-palette-2-base tr:nth-child(even) {
+  color: #ffffff;
+  background-color: #bba1a3;
+}
+.u-tabs:not([class*="u-align-"]), .u-repeater-item:not([class*="u-align-"]),
+.u-container-style:not([class*="u-align-"]) {
+  text-align: left;
+  margin: 4%;
+  padding: 2% 2% 2% 5%;
+}
+.u-container-style #timer {
+  text-align: right;
+}
+.u-palette-2-base, .u-body.u-palette-2-base, .u-container-style.u-palette-2-base:before,
+.u-table-alt-palette-2-base tr:nth-child(even) {
+  color: #ffffff;
+  background-color: #bba1a3;
+}
+.u-container-layout:not(p){
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  justify-content: space-between;
+  padding-right: 5%;
+
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.u-text, .u-text span {
+  word-wrap: break-word;
+  position: relative;
+}
+.launch {
+  padding: 10% 0;
 }
 
-.App-link {
-  color: #61dafb;
+.launch .container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.launch {
+  box-sizing: border-box;
+  flex-basis: 33.33%;
+  padding: 10px;
+  color: inherit;
+}
+
+.mission-item {
+  display: block;
+}
+
+.mission-item__title {
+  margin: 10px 0;
+  text-align: right;
+  font-size: 16px;
+}
+#timer{
+  padding: 2% 10% 5%;
+  background: #3b4446;
+  margin-top: 0;
+  table-layout: fixed;
+}
+#timer td{
+  padding: 0 5% 1%;
+  width: 30%;
 }

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import missions from './missions';
+import Launch from "./Launch";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  render() {
+    return (
+        <div className="App">
+          <h1 className='title'>SpaceX Launches 2021</h1>
+          <div className='launches'>
+            <div className='container'>
+              {missions.map((mission, index) => (
+                  <div>
+                    <Launch mission={mission}/>
+                  </div>
+              ))}
+            </div>
+          </div>
+        </div>
+    );
+  }
 }
 
 export default App;
